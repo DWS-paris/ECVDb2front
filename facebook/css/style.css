@@ -1,0 +1,27 @@
+*{
+    /* Intégrer le padding et le border-width dans la taille des blocs */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Supprimer toutes les marges */
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    /* Descendre le ratio de 16.5px à 10px */
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.5rem;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h1 span{
+    font-size: .5em;
+}

@@ -19,7 +19,9 @@
                 </article>
 
                 <article>
-                    <form action="#">
+                    
+                    <!-- Ajouter une ID pour séectionner le form en JavaScript -->
+                    <form action="#" id="formLogIn">
                         <fieldset>
                             <label for="userName">Email or Phone</label>
                             <input type="text" id="userName" name="userName">
@@ -54,6 +56,8 @@
                         </fieldset>
 
                         <fieldset>
+                            <!-- Ajouter un titre dans un fieldset -->
+                            <legend>Birthday</legend>
                             <ul>
                                 <li>
                                     <select name="userMonth">
@@ -76,10 +80,9 @@
                                 <li><a href="#">Why do I need to provide my birthday?</a></li>
                             </ul>
 
-                            <p>
-                                <input type="radio" name="gender" value="female"> Female
-                                <input type="radio" name="gender" value="male"> Male
-                            </p>
+                            <p><input type="radio" name="gender" value="female"> Female</p>
+                            <p><input type="radio" name="gender" value="male"> Male</p>
+
                         </fieldset>
 
                         <p>By clicking Create Account, you agree to our Terms and that you have read our Data Policy, including our Cookie Use. You may receive SMS Notifications from Facebook and can opt out at any time.</p>

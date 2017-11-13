@@ -4,8 +4,14 @@ Style du reset
     @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
     *{
+        /* Supprimer toutes les marges */
         margin: 0;
         padding: 0;
+
+        /* Intégrer les bordures et les paddings dans la taille des blocs */
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
     }
 
     html{
@@ -41,6 +47,10 @@ Style du reset
     ul{
         list-style: none;
     }
+
+    img{
+        max-width: 100%;
+    }
 /**/
 
 /* 
@@ -63,7 +73,7 @@ Style header
         right: -25rem;
     }
 
-    nav li{
+    li{
         margin-bottom: 1rem;
     }
 
@@ -130,5 +140,140 @@ Style header
         font-weight: 100;
         font-size: 2.5rem;
         display: block;
+    }
+/**/
+
+/* 
+Style main
+*/
+    section{
+        padding: 10rem 0;
+    }
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    main ul{
+        max-width: 35rem;
+        margin: 0 auto 2rem auto;
+    }
+
+    main{
+        max-width: 90rem;
+        margin: auto;
+    }
+
+    main article{        
+        display: -webkit-flex;
+        display: flex;
+
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        justify-content: space-between;
+    }
+
+    figure{
+        width: 30%;
+        cursor: pointer;
+        margin-bottom: 3rem;
+
+        /* Bloquer les enfants dans le parent */
+        position: relative;
+    }
+
+    
+
+    figcaption {
+        font-size: 2rem;
+        background: rgba(19, 19, 19, .5);
+        padding: 2rem;
+        width: 60%;
+
+        opacity: 0;
+        margin-top: -2rem;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        -webkit-transition: all .5s;
+        transition: all .5s;
+    }
+
+    figure:hover figcaption{
+        margin-top: 0;
+        opacity: 1;
+    }
+
+    
+
+    figcaption span {
+        font-family: 'Arial', sans-serif;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+
+        display: block;
+        background: #131313;
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        font-size: 3.5rem;
+        color: #eea136;
+        margin: 6rem auto 1rem auto;
+    }
+
+    form{
+        max-width: 40rem;
+        margin: auto;
+    }
+
+    input, textarea, button{
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+
+    textarea{
+        min-height: 20rem;
+    }
+
+    .callToAction{
+        font-size: 1.7rem;
+        font-weight: 500;
+        color: #131313;
+        background-color: #eea136;
+        padding: 1rem;
+        
+        border: none;
+        border-bottom: .5rem solid #9d6924;
+
+        -webkit-transition: all .5s;
+        transition: all .5s;
+    }
+
+    .callToAction:hover{
+        background-color: white;
+        border-color: white;
+    }
+/**/
+
+/* 
+Style footer
+*/
+    footer{
+        opacity: .7;
+        padding: 2rem;
     }
 /**/

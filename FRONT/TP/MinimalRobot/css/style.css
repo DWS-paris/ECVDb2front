@@ -61,6 +61,7 @@ Style header
     }
 
     nav {
+        text-align: left;
         color: #9c9c9c;
         padding: 4rem;
         border-left: .1rem solid #434343;
@@ -71,6 +72,14 @@ Style header
         position: fixed;
         top: 0;
         right: -25rem;
+
+        -webkit-transition: right .5s;
+        transition: right .5s;
+    }
+
+    /* Ajouter la class open sur la nav au clique sur le burger */
+    nav.open{
+        right: 0;
     }
 
     li{

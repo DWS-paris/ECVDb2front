@@ -1,0 +1,134 @@
+/* 
+Style du reset
+*/
+    @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    html{
+        font-size: 62.5%; /* 1rem = 10px */
+    }
+
+    body{
+        font-family: 'Times', serif;
+        font-size: 1.5rem; /* => 15px */
+        text-align: center;
+        color: white;
+        background-color: #131313;
+
+        /* Gestion de l'image de fond */
+        background-image: url('../img/background.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    h1, h2, h3{
+        font-family: 'Arial', sans-serif;
+    }
+
+    h1, h2{
+        text-transform: uppercase;
+    }
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    ul{
+        list-style: none;
+    }
+/**/
+
+/* 
+Style header
+*/
+    header img{
+        width: 5rem;
+    }
+
+    nav {
+        color: #9c9c9c;
+        padding: 4rem;
+        border-left: .1rem solid #434343;
+        background-color: #131313;
+        height: 100vh;
+
+        /* Figer la nav en haut à droite de la page */
+        position: fixed;
+        top: 0;
+        right: -25rem;
+    }
+
+    nav li{
+        margin-bottom: 1rem;
+    }
+
+    nav li:first-child{
+        font-size: 2rem;
+        font-family: 'Arial', sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: white;
+        margin-bottom: 2rem;
+    }
+
+    nav li:last-child{
+        margin-top: 3rem;
+    }
+
+    header section {
+        max-width: 90rem;
+        margin: auto;
+        height: 100vh;
+
+        /* Bloquer les enfants dans le parent */
+        position: relative;
+    }
+
+    header section a:first-of-type{
+        /* Sortir la balise du flux */
+        position: absolute;
+        top: 2rem;
+        left: 0;
+    }
+
+    header section a:last-of-type {
+        font-size: 3rem;
+        color: #bababa;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 1rem 1.5rem;
+        
+        /* Sortir la balise du flux */
+        position: absolute;
+        top: 2rem;
+        right: 0;
+    }
+
+    h1 {
+        font-size: 6rem;
+        font-weight: 900;
+        line-height: 1;
+        width: 100%;
+        max-width: 50rem;
+
+        /* Sortir la balise du flux pour la repositionner */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        /* CSS3 : utilisation des constructeurs */
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    h1 span {
+        font-family: 'Times', serif;
+        font-weight: 100;
+        font-size: 2.5rem;
+        display: block;
+    }
+/**/

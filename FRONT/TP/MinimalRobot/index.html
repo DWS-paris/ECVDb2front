@@ -8,7 +8,8 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-
+        <!-- <a href="mailto:?subject=look at this website&body=Hi,I found this website
+        and thought you might like it http://www.geocities.com/wowhtml/">tell a friend</a> -->
         <header>
             <nav id="myNav">
                 <ul>
@@ -54,7 +55,7 @@
             <section>
                 <h2>Portfolio</h2>
                 <article>
-                    <figure>
+                    <figure id="myProject">
                         <img src="./img/project1.jpg">
 
                         <!-- Figcaption remplace l'attribut alt de l'image -->
@@ -114,6 +115,21 @@
                         </figcaption>
                     </figure>
                 </article>
+
+                <article id="modal">
+                    <div id="contentModal">
+                        <div>
+                            <img src="./img/project1.jpg" alt="Projet 1">
+                        </div>
+
+                        <div>
+                            <a href="#" id="closeModal"><i class="fa fa-times" aria-hidden="true"></i></a>
+                            <h3>Titre du projet</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut temporibus nesciunt repudiandae repellendus nulla architecto quod placeat? Illo, dignissimos? Officia quos esse mollitia in a qui? Exercitationem, numquam tempora.</p>
+                        </div>
+                    </div>
+                </article>
+
             </section>
 
             <section>

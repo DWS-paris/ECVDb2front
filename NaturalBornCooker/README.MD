@@ -1,4 +1,10 @@
 # Projet Natural Born Cooker
+## Planning
+Pour réaliser xe projet vous devez respecter le planning ci-dessous :
+- 22 novembre : Moodboard et présentation
+- 27 novembre : WireFrame
+- 29 novembre : Design site, des fiches recette et des pictos
+
 ## Présentation
 L'agence dans laquelle vous travaillez doit réaliser le site single page d'un chef cuisinier qui souhaite se lancer dans la cuisine à domicile. La demande du client est très clair dans la mesure ou il sait exactement se qu'il veut comme site Web.
 
